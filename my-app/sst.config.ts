@@ -13,7 +13,8 @@ export default {
       
 
       const service = new Service(stack, "MyService", {
-        path: "./service"
+        path: "./service",
+        port: 8080
       });
 
       const site = new NextjsSite(stack, "site", {
